@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>READ WITH AMOS</title>
+    <title>READ WITH AMOS</title> 
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1a1a1a">
+<meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="refresh" content="0; url=https://dlz7zhjuc7hgc.kimi.place">
     <style>
         body {
@@ -49,5 +52,12 @@
         <p>Redirecting you automatically...</p>
         <p>If you are not redirected, <a href="https://dlz7zhjuc7hgc.kimi.place">click here</a>.</p>
     </div>
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/READ-WITH-AMOS/sw.js')
+      .then(reg => console.log('App ready!'))
+      .catch(err => console.log('Error:', err));
+  }
+</script>
 </body>
 </html>
